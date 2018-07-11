@@ -5,6 +5,17 @@ var pickedColor = pickColor();
 var displayColor = document.querySelector("#displayColor");
 displayColor.textContent = pickedColor;
 var message = document.querySelector("#message");
+var h1 = document.querySelector("h1");
+var reset = document.querySelector("#reset");
+
+reset.addEventListener("click", () => {
+  colors = generateColors(6);
+  pickedColor = pickColor();
+  displayColor.textContent = pickedColor;
+  for (var i = 0; i < squares.length; i++) {
+    squares[i].style.backgroundColor = colors[i];
+  }
+});
 
 for (var i = 0; i < squares.length; i++) {
   //add initial colors to squares
@@ -14,7 +25,8 @@ for (var i = 0; i < squares.length; i++) {
     var clickedColor = this.style.backgroundColor;
     if (clickedColor === pickedColor) {
       message.textContent = "Correct";
-      changeColors(pickedColor);
+      changeColors(clickedColor);
+      h1.style.backgroundColor = clickedColor;
     } else {
       message.textContent = "Try Again";
       this.style.backgroundColor = "#232323";

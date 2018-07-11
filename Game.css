@@ -1,25 +1,34 @@
-body{
-    background-color: #232323;
+body {
+  margin: 0 auto;
+  background-color: #232323;
 }
-.container{
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.square{
-    width: 30%;
-    background-color:purple; 
-    padding-bottom:30%;
-    float: left;
-    margin: 1.66%;
-    border-radius: 30px;
-}
-h1{
-    text-align: center;
-    margin: 0 auto;
-    color:white;
+.container {
+  margin: 0 auto;
+  max-width: 600px;
 }
 
-span{
-    color: white;
+.square {
+  width: 30%;
+  background-color: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 30px;
+}
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  background-color: #232323;
+}
+
+span {
+  /* color: white; */
+}
+
+#stripe {
+  text-align: center;
+  height: 30px;
+  background-color: white;
+  color: #232323;
 }
