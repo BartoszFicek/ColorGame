@@ -1,9 +1,11 @@
 body {
   margin: 0 auto;
   background-color: #232323;
+  font-size: 18px;
+  font-family: "Arvo", serif;
 }
 .container {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 600px;
 }
 
@@ -14,19 +16,28 @@ body {
   float: left;
   margin: 1.66%;
   border-radius: 30px;
+  transition: background-color 0.5s;
+  --webkit-transition: background-color 0.5s;
+  --moz-transition: background-color 0.5s;
 }
 h1 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  line-height: 1.1;
+  font-weight: normal;
   text-align: center;
   margin: 0 auto;
   color: white;
-  background-color: #232323;
+  background-color: steelblue;
+  text-transform: uppercase;
 }
 
-span {
-  /* color: white; */
+#displayColor {
+  font-size: 200%;
 }
 
 #stripe {
+  font-size: 20px;
   text-align: center;
   height: 30px;
   background-color: white;
@@ -34,5 +45,29 @@ span {
 }
 
 .selected {
-  background-color: blue;
+  color: white;
+  background-color: steelblue;
+}
+
+button {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 100%;
+  background-color: white;
+  border: 0px solid black;
+  font-size: inherit;
+  color: steelblue;
+  transition: all 0.4s;
+  --webkit-transition: all 0.4s;
+  --moz-transition: all 0.4s;
+}
+button:hover {
+  background-color: steelblue;
+  color: white;
+}
+#message {
+  font-weight: bolder;
+  display: inline-block;
+  width: 20%;
 }

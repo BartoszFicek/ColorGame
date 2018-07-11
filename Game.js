@@ -25,7 +25,7 @@ easy.addEventListener("click", () => {
       squares[i].style.display = "none";
     }
   }
-  h1.style.backgroundColor = "#232323";
+  h1.style.backgroundColor = "steelblue";
 });
 
 hard.addEventListener("click", () => {
@@ -39,7 +39,7 @@ hard.addEventListener("click", () => {
     squares[i].style.backgroundColor = colors[i];
     squares[i].style.display = "block";
   }
-  h1.style.backgroundColor = "#232323";
+  h1.style.backgroundColor = "steelblue";
 });
 
 reset.addEventListener("click", () => {
@@ -51,7 +51,7 @@ reset.addEventListener("click", () => {
   for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
   }
-  h1.style.backgroundColor = "#232323";
+  h1.style.backgroundColor = "steelblue";
 });
 
 for (var i = 0; i < squares.length; i++) {
@@ -66,7 +66,7 @@ for (var i = 0; i < squares.length; i++) {
       changeColors(clickedColor);
       h1.style.backgroundColor = clickedColor;
     } else {
-      message.textContent = "Try Again";
+      message.textContent = "Not this";
       this.style.backgroundColor = "#232323";
     }
   });
